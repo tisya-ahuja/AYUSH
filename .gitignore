@@ -1,0 +1,58 @@
+# Python
+
+**pycache**/
+*.py[cod]
+*.so
+
+# Virtual environments
+
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter
+
+.ipynb_checkpoints/
+
+# IDE
+
+.vscode/
+.idea/
+
+# OS
+
+.DS_Store
+Thumbs.db
+
+# Python packaging
+
+*.egg-info/
+dist/
+build/
+
+# Environment / secrets
+
+.env
+.env.*
+!.env.example
+
+# Model artifacts
+
+*.pkl
+*.joblib
+*.h5
+*.keras
+
+# Large datasets
+
+data/raw/*
+data/processed/*
+
+# Generated reports
+
+reports/generated/
+
+# Streamlit
+
+.streamlit/secrets.toml
