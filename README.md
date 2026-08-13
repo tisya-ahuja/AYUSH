@@ -35,29 +35,28 @@ AYUSH aims to investigate whether historical equipment sensor measurements can b
 AYUSH follows a predictive-maintenance pipeline:
 
 ```text
-Equipment Sensor Data
+           Equipment Sensor Data
                     |
                     v
-     Data Preprocessing
+            Data Preprocessing
                     |
                     v
-     Feature Engineering
+            Feature Engineering
                     |
                     v
-         ML Models
+                ML Models
                     |
                     v
-        RUL Prediction
+              RUL Prediction
                     |
                     v
-         Model Analysis
+              Model Analysis
                     |
                     v
-        Explainability
+              Explainability
                     |
                     v
- Maintenance Risk
- & Decision Support
+     Maintenance Risk & Decision Support
 ```
 
 The system will estimate the number of remaining operating cycles before failure and use the prediction to provide maintenance-oriented risk information.
@@ -231,19 +230,19 @@ The predicted RUL can subsequently be translated into prototype maintenance-risk
 For example:
 
 ```text
-Higher RUL
+    Higher RUL
          |
          v
- NORMAL
+       NORMAL
          |
          v
- MONITOR
+      MONITOR
          |
          v
- HIGH MAINTENANCE PRIORITY
+HIGH MAINTENANCE PRIORITY
          |
          v
-Lower RUL
+     Lower RUL
 ```
 
 Any risk thresholds used in the prototype will be explicitly treated as experimental decision rules, not as real-world defence maintenance standards.
@@ -286,56 +285,52 @@ Current Status: Proposal / Development in Progress
 
 ## Project Structure
 
-<table>
-    <thead>
-        <tr>
-            <th>Path</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>data/raw/</td>
-            <td>Raw dataset files</td>
-        </tr>
-        <tr>
-            <td>data/processed/</td>
-            <td>Cleaned and prepared data</td>
-        </tr>
-        <tr>
-            <td>notebooks/</td>
-            <td>Exploration, analysis, and experimentation notebooks</td>
-        </tr>
-        <tr>
-            <td>src/</td>
-            <td>Reusable source code for preprocessing, training, and evaluation</td>
-        </tr>
-        <tr>
-            <td>models/</td>
-            <td>Saved model artifacts</td>
-        </tr>
-        <tr>
-            <td>app/</td>
-            <td>Prototype application or dashboard</td>
-        </tr>
-        <tr>
-            <td>reports/</td>
-            <td>Documentation and generated reports</td>
-        </tr>
-        <tr>
-            <td>README.md</td>
-            <td>Project overview and setup information</td>
-        </tr>
-        <tr>
-            <td>requirements.txt</td>
-            <td>Python dependency list</td>
-        </tr>
-        <tr>
-            <td>.gitignore</td>
-            <td>Ignored files and folders</td>
-        </tr>
-    </tbody>
-</table>
+```text
+AYUSH/
+│
+├── data/
+│   ├── raw/
+│   │   ├── FD001/
+│   │   ├── FD002/
+│   │   ├── FD003/
+│   │   └── FD004/
+│   │
+│   └── processed/
+│
+├── notebooks/
+│   ├── 01_data_audit.ipynb
+│   ├── 02_eda.ipynb
+│   ├── 03_rul_target.ipynb
+│   ├── 04_baseline_models.ipynb
+│   ├── 05_feature_engineering.ipynb
+│   ├── 06_model_comparison.ipynb
+│   ├── 07_explainability.ipynb
+│   └── 08_test_evaluation.ipynb
+│
+├── src/
+│   ├── __init__.py
+│   ├── data.py
+│   ├── preprocessing.py
+│   ├── features.py
+│   ├── models.py
+│   ├── evaluation.py
+│   └── explainability.py
+│
+├── models/
+│
+├── reports/
+│   ├── figures/
+│   └── results/
+│
+├── app/
+│   └── app.py
+│
+├── tests/
+│
+├── README.md
+├── requirements.txt
+└── .gitignore
+```
 
 The repository structure will evolve as development progresses.
 
