@@ -402,6 +402,6 @@ Tisya Ahuja
 
 B.Tech - Computer Science
 
-B.Sc. - Data Science
+B.S. - Data Science
 
 GitHub: https://github.com/tisya-ahuja
