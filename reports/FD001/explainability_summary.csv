@@ -1,0 +1,4 @@
+analysis,result
+Final XGBoost feature importance,cycle and sensor_11 are the two most important features
+SHAP global importance,"cycle has the largest average impact, followed by sensor_11, sensor_4 and sensor_9"
+Individual prediction explanation,Engine 1 prediction is explained using SHAP contributions
